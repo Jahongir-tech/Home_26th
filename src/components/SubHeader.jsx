@@ -9,7 +9,6 @@ const SubHeader = () => {
       <p className="flex items-center justify-center gap-2 text-base">
         30% off storewide — Limited time!{" "}
         <span className="hover:underline cursor-pointer">Shop Now</span>
-        {/* <FaArrowRightLong /> */}
       </p>
       <img src={ArrowRight} alt="arrow icon" />
     </div>

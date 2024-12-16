@@ -3,7 +3,6 @@ import React from "react";
 import { FaRegHeart, FaTrashAlt } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 
-
 const ScrollProducts = ({ data, isAdmin }) => {
   const handleDelete = async (id) => {
     const confirmDelete = confirm("Are you sure?");
@@ -41,7 +40,6 @@ const ScrollProducts = ({ data, isAdmin }) => {
             <h3 className="text-lg font-semibold mt-3">{product.name}</h3>
             <p className="text-gray-700">{product.price} USD</p>
 
-            {/* Admin or User Actions */}
             <div className="mt-4 flex justify-end">
               {isAdmin ? (
                 <button

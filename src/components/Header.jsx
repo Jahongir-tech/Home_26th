@@ -63,10 +63,8 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <div className="absolute top-0 left-0 w-full h-[800px] bg-white z-50 px-6 py-10">
-            {/* Logo and Close Button */}
             <div className="flex justify-between items-center mb-6">
               <img src={HeaderLogo} alt="header logo" />
               <FiX
@@ -75,7 +73,6 @@ const Header = () => {
               />
             </div>
 
-            {/* Navigation Links */}
             <div className="relative flex items-center pb-6">
               <IoSearch className="absolute left-3 text-gray-400 text-xl" />
               <input
@@ -120,8 +117,6 @@ const Header = () => {
                 </NavLink>
               </div>
             </div>
-
-            {/* Cart and Wishlist */}
             <div className="mt-28 flex flex-col gap-4">
               <div className="flex items-center justify-between pb-4 border-b-2">
                 <span>Cart</span>
@@ -142,8 +137,6 @@ const Header = () => {
                 </div>
               </div>
             </div>
-
-            {/* Sign In Button */}
             <div className="mt-10">
               <button
                 onClick={() => setMenuOpen(false)}
@@ -152,8 +145,6 @@ const Header = () => {
                 {token ? "Admin Panel" : "Sign In"}
               </button>
             </div>
-
-            {/* Social Links */}
             <div className="flex justify-start gap-6 mt-8 text-2xl">
               <a
                 href="https://instagram.com"

@@ -1,18 +1,18 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit";
 
 const reloadSlice = createSlice({
-    name: "reload",
-    initialState: {
-        productReload: false,
-        categoryReload: false,
-        orderReload: false,
+  name: "reload",
+  initialState: {
+    productReload: false,
+    categoryReload: false,
+    orderReload: false,
+  },
+  reducers: {
+    changeProductRelaod(state) {
+      state.productReload = !state.productReload;
     },
-    reducers: {
-        changeProductRelaod(state){
-            state.productReload = !state.productReload
-        }
-    }
-})
+  },
+});
 
-export const { changeProductRelaod } = reloadSlice.actions // setState
-export default reloadSlice.reducer // state
+export const { changeProductRelaod } = reloadSlice.actions;
+export default reloadSlice.reducer;

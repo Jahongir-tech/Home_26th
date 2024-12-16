@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#admin .active{
-    background: #fff;
-    color: #000;
+#admin .active {
+  background: #fff;
+  color: #000;
 }

@@ -7,7 +7,6 @@ const CreateProduct = () => {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch categories on mount
   useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -28,7 +27,6 @@ const CreateProduct = () => {
     const formData = new FormData(e.target);
     const product = Object.fromEntries(formData);
 
-    // Convert numeric fields to numbers
     product.price = +product.price;
     product.categoryId = +product.categoryId;
     product.stock = +product.stock;
@@ -56,7 +54,6 @@ const CreateProduct = () => {
         <p className="text-center text-gray-500">Loading categories...</p>
       ) : (
         <form onSubmit={handleCreateProduct} className="space-y-6">
-          {/* Product Name */}
           <div>
             <label className="block text-sm font-semibold text-gray-700">
               Product Name
@@ -70,7 +67,6 @@ const CreateProduct = () => {
             />
           </div>
 
-          {/* Description */}
           <div>
             <label className="block text-sm font-semibold text-gray-700">
               Description

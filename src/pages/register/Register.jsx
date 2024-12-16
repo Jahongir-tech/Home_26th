@@ -48,7 +48,7 @@ const Register = () => {
   };
   return (
     <div className="w-full min-h-screen grid grid-cols-2 max-[850px]:grid-cols-1">
-      <div className='bg-[url("src/assets/images/register.png")] bg-cover bg-center bg-no-repeat max-[850px]:hidden'></div>
+      <div className='bg-register bg-cover bg-center bg-no-repeat max-[850px]:hidden'></div>
       <div className="flex max-[1100px]:p-10 max-[500px]:p-5 items-center pl-[87px]">
         <form
           onSubmit={handleSubmit(onSignUp)}

@@ -2,15 +2,12 @@ import { useFetch } from "@/hooks/useFetch";
 import React from "react";
 
 const Category = () => {
-  // Fetch data from the API
   const { data, error, loading } = useFetch("/product-category/get");
 
-  // Handle loading and error states
   if (loading) return <div>Loading categories...</div>;
   if (error)
     return <div>Failed to load categories. Please try again later.</div>;
 
-  // Check if data is available
   if (!data || data.length === 0) {
     return <div>No categories available.</div>;
   }

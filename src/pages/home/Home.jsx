@@ -14,7 +14,6 @@ const Home = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch products on component mount
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -34,9 +33,8 @@ const Home = () => {
 
   return (
     <>
-      {/* Hero Section */}
       <section className="w-full bg-[#171D28] min-h-screen grid grid-cols-2 max-[850px]:grid-cols-1">
-        <div className='bg-[url("src/assets/images/heroImage.png")] bg-cover max-[850px]:h-[430px]'></div>
+        <div className='bg-hero bg-cover max-[850px]:h-[430px]'></div>
         <div className="flex items-center justify-center max-[1200px]:p-10">
           <div className="text-white w-[500px] min-h-[308px] flex flex-col items-start justify-center gap-10">
             <h2 className="text-7xl font-medium leading-tight">
@@ -53,7 +51,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Trending Brands */}
       <section className="container py-20">
         <h3 className="text-center text-4xl font-medium pb-20">
           Trending Brands
@@ -70,7 +67,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Just In Section */}
       <section className="container">
         <div className="flex items-center justify-between pt-10">
           <h3 className="text-5xl font-medium">Just In</h3>
@@ -89,7 +85,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Categories Section */}
       <section className="container">
         <Categories />
       </section>
