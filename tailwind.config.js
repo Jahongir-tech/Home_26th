@@ -18,7 +18,7 @@ export default {
     extend: {
       backgroundImage: {
         hero: "url('assets/images/HeroImage.png')",
-        register: "url('assets/images/register.png)"
+        register: "url('assets/images/register.png')"
       },
     },
   },
